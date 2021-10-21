@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'avenir-black';
+    src: url('../fonts/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+    font-family: 'avenir-roman';
+    src: url('../fonts/AvenirLTStd-Roman.otf');
+}
+
+@font-face {
+    font-family: 'avenir-book';
+    src: url('../fonts/AvenirLTStd-Book.otf');
+}
+
+body {
+    /* FONT STYLES */
+    --fs-xl: 50px; 
+    --fs-lg: 36px; 
+    --fs-md: 24px; 
+    --fs-sm: 18px; 
+
+    /* COLORS */ 
+    --cl-ppn-main-h: 243;
+    --cl-ppn-main-s: 100%;
+    --cl-ppn-main-l: 66%;
+    --cl-ppn-main: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 1); 
+    --cl-ppn-main-50: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.5); 
+    --cl-ppn-main-20: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.2); 
+    --cl-ppn-main-5: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.05); 
+
+    --cl-black-h: 0;
+    --cl-black-s: 0%;
+    --cl-black-l: 0%;
+    --cl-black: rgba(var(--cl-black-r), var(--cl-black-s), var(--cl-black-l), 1); 
+
+    --cl-txt-black: hsla(var(--cl-black-h), var(--cl-black-s), var(--cl-black-l), 0.9); 
+    --cl-txt-grey: hsla(var(--cl-black-h), var(--cl-black-s), var(--cl-black-l), 0.5); 
+    --cl-txt-light-grey: hsla(var(--cl-black-h), var(--cl-black-s), var(--cl-black-l), 0.25);
+
+    /* PADDING */
+    --pad-lg: 40px; 
+    --pad-md: 20px; 
+
+
+    /* GENERAL FONT-STYLE */
+    font-family: 'avenir-book'; 
+
+    /* HEIGHT */
+    min-height: 100vh; 
+}
+
+:is(p , h1 , h2)  {
+    color: var(--cl-txt-black); 
+    padding: 0;
+    margin: 0; 
+}
+
+.fs-xl {
+    font-size: var(--fs-xl); 
+}
+
+.fs-lg {
+    font-size: var(--fs-lg); 
+}
+
+.fs-md {
+    font-size: var(--fs-md); 
+}

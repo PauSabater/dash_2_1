@@ -1,0 +1,6 @@
+.header {
+    --header-height: 70px; 
+
+    height: var(--header-height);
+
+}

@@ -1,0 +1,4 @@
+.navigation-side {
+    min-height: 100vh; 
+    background: var(--cl-ppn-main-5);
+}

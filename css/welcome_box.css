@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'avenir-black';
+    src: url('../fonts/AvenirLTStd-Black.otf');
+}
+
+.welcome-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.welcome-box__infos {
+
+}
+
+.welcome-box__name {
+    font-family: 'avenir-black'; 
+    font-size: clamp(50px, 4vw, 150px);
+}
