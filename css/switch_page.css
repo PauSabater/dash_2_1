@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'avenir-black';
+    src: url('../fonts/AvenirLTStd-Black.otf');
+}
+
+.welcome-box {
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: var(--header-height) 0 var(--mg-md);
+}
+
+.welcome-box__infos {
+
+}
+
+.welcome-box__name {
+    font-family: 'avenir-black'; 
+    font-size: clamp(50px, 4vw, 150px);
+}
+
+/* CONTRACTS */
+.contracts-container {
+    
+
+}
+
+.card-contract {
+    cursor: pointer; 
+    width: 100%; 
+    height: 150px;
+    background: var(--cl-ppn-light);
+    border-radius: var(--br-md);
+    border: 1px solid var(--cl-br);
+}
+
+.card-contract:hover {
+    background: var(--cl-ppn-light-hovered);
+
+}

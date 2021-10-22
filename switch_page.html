@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Dashboard switch</title>
     <link rel="stylesheet" href="css/design_system.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav_side.css">
-    <link rel="stylesheet" href="css/welcome_box.css">
+    <link rel="stylesheet" href="css/switch_page.css">
   </head>
   <body>
     <nav class="header">
@@ -26,15 +26,29 @@
             <div class="welcome-box">
                 <!--  INFOS -->
                 <div class="welcome-box__infos">
-                    <p class="welcome-box__name fs-lg">
-                        Hello Charles
-                    </p>
-                    <p class="welcome-box__address fs-md">
-                        Rue de Rivoli 14
-                    </p>
+                    <div class="wrapper">
+                        <p class="welcome-box__name fs-lg">Hello, Charles</p>
+                    </div>
+                    <p class="welcome-box__address fs-md">Rue de Rivoli 14</p>
                 </div>
                 <!--  TODO: CHART ELEMENT -->
                 <div class="welcome-box__chart">
+
+                </div>
+            </div>
+
+            <div class="contracts-container">
+                <div class="contracts__title">
+                    <p class="fs-lg fs-semibold ">Your contracts</p>
+
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="19.5" stroke="#000000"/>
+                        <path d="M7.5 20H32.5" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+                        <path d="M20 7L20 32" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+                    </svg>
+                        
+                </div>
+                <div class="card-contract">
 
                 </div>
             </div>

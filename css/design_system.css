@@ -26,8 +26,9 @@ body {
     --cl-ppn-main-l: 66%;
     --cl-ppn-main: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 1); 
     --cl-ppn-main-50: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.5); 
-    --cl-ppn-main-20: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.2); 
-    --cl-ppn-main-5: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.05); 
+
+    --cl-ppn-light: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.02); 
+    --cl-ppn-light-hovered: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.03); 
 
     --cl-black-h: 0;
     --cl-black-s: 0%;
@@ -37,10 +38,18 @@ body {
     --cl-txt-black: hsla(var(--cl-black-h), var(--cl-black-s), var(--cl-black-l), 0.9); 
     --cl-txt-grey: hsla(var(--cl-black-h), var(--cl-black-s), var(--cl-black-l), 0.5); 
     --cl-txt-light-grey: hsla(var(--cl-black-h), var(--cl-black-s), var(--cl-black-l), 0.25);
+    --cl-br: hsla(var(--cl-black-h), var(--cl-black-s), var(--cl-black-l), 0.10);
 
     /* PADDING */
     --pad-lg: 40px; 
     --pad-md: 20px; 
+
+    /* MARGINS */
+    --mg-lg: 40px;
+    --mg-md: 20px;
+
+    /* BORDERS */
+    --br-md: 10px;
 
 
     /* GENERAL FONT-STYLE */
@@ -56,6 +65,11 @@ body {
     margin: 0; 
 }
 
+
+/* HELPER CLASSES
+ ______________________________________________________________  */
+
+/* Font */
 .fs-xl {
     font-size: var(--fs-xl); 
 }
@@ -66,4 +80,12 @@ body {
 
 .fs-md {
     font-size: var(--fs-md); 
+}
+
+.fs-semibold {
+    font-family: 'avenir-black';
+}
+
+.fs-bold {
+    font-family: 'avenir-black';
 }
