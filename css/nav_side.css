@@ -1,9 +1,9 @@
 .nav-side {
-    position: sticky;
+    position: fixed;
     z-index: 0; 
     top: 0;
     left: 0; 
-    width: 100%;
+    width: var(--nav-side-width);
     min-height: 100vh; 
     background: var(--cl-ppn-light);
 }

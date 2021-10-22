@@ -56,6 +56,8 @@
             </ul>
         </nav>
 
+        <div></div>
+
         <div class="content-container">   
             <div class="welcome-box">
                 <!--  INFOS -->
@@ -63,26 +65,97 @@
                     <div class="wrapper">
                         <p class="welcome-box__name fs-lg">Hello, Charles</p>
                     </div>
-                    <p class="welcome-box__address fs-md">Rue de Rivoli 14</p>
+                    <p class="welcome-box__address fs-base fc-grey-dark">Rue de Rivoli 14</p>
+                    <p class="welcome-box__address fs-md fc-grey-dark">Grace à Papernest, économisez jusqu'a</p>
+                    <p class="welcome-box__value fs-lg fs-bold fc-grey-dark">305e <span class="fs-md">/ ann</span></p>
                 </div>
                 <!--  TODO: CHART ELEMENT -->
                 <div class="welcome-box__chart">
+                    <img class="welcome-box__chart-img" src="img/graph1.svg" alt="">
+                    <p class="chart__value">Total abonnements</p>
+                    <p class="chart__value">270e/mois</p>
+
+                    <!--
+                    <div class="chart__column-container">
+                        <div style="--height-percentage: 0.8;" class="chart__column"></div>
+                    </div>
+                    <div class="chart__column-container">
+                        <div style="--height-percentage: 0.5;" class="chart__column"></div>
+                    </div>
+                    <div class="chart__column-container">
+                        <div style="--height-percentage: 0.4;" class="chart__column"></div>
+                    </div>
+                    <div class="chart__column-container">
+                        <div style="--height-percentage: 0.25;" class="chart__column"></div>
+                    </div>
+                    <div class="chart__column-container">
+                        <div style="--height-percentage: 0.15;" class="chart__column"></div>
+                    </div>
+                    -->
+
 
                 </div>
             </div>
 
             <div class="contracts-container">
                 <div class="contracts__title">
-                    <p class="fs-lg fs-semibold ">Your contracts</p>
-
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="19.5" stroke="#000000"/>
-                        <path d="M7.5 20H32.5" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
-                        <path d="M20 7L20 32" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
-                    </svg>
-                        
+                    <p class="contracts__title-text fs-lg fs-semibold ">Mes contrats</p> 
+                    <div class="contracts__btn">
+                        <p class="contracts__btn-text fs-base">Ajouter nouveau contrat</p> 
+                        <svg width="25" height="25" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="19.5" stroke="#000000"/>
+                            <path d="M7.5 20H32.5" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 7L20 32" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        </svg>   
+                    </div>
                 </div>
+
                 <div class="card-contract">
+                    <div class="card-contract__logo">
+                        <img class="card-contract__logo-img" src="img/planete_oui.svg" alt="" class="">
+                    </div>
+                    <p class="card-contract__text fs-semibold">Energie</p>
+                    <p class="card-contract__text fs-semibold  fs-cl-ppn">Energie verte</p>
+                    <p class="card-contract__text fs-semibold">20€/ mois</p>
+                    <div class="contract-action-container">
+                        <div class="contract-action">
+                            <img class="contract-action__icon" src="img/icon-magn-glass.svg" alt="">
+                            <p class="card-contract__text fs-sm fs-cl-ppn">Comparer</p>   
+                        </div>
+                        <div class="contract-action">
+                            <img class="contract-action__icon icon--smaller" src="img/icon-cross.svg" alt="">
+                            <p class="card-contract__text fs-sm fs-cl-ppn">Résilier</p>   
+                        </div>
+                        <div class="contract-action">
+                            <img class="contract-action__icon icon--smaller" src="img/icon-details.svg" alt="">
+                            <p class="card-contract__text fs-sm fs-cl-ppn">Détails</p>   
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-contract">
+                    <div class="card-contract__logo">
+                        <img class="card-contract__logo-img" src="img/planete_oui.svg" alt="" class="">
+                    </div>
+                    <p class="card-contract__text fs-semibold">Box internet</p>
+                    <p class="card-contract__text fs-semibold  fs-cl-ppn">Fibre max</p>
+                    <p class="card-contract__text fs-semibold">20€/ mois</p>
+                    <div class="contract-action-container">
+                        <div class="contract-action">
+                            <img class="contract-action__icon" src="img/icon-magn-glass.svg" alt="">
+                            <p class="card-contract__text fs-sm fs-cl-ppn">Comparer</p>   
+                        </div>
+                        <div class="contract-action">
+                            <img class="contract-action__icon icon--smaller" src="img/icon-cross.svg" alt="">
+                            <p class="card-contract__text fs-sm fs-cl-ppn">Résilier</p>   
+                        </div>
+                        <div class="contract-action">
+                            <img class="contract-action__icon icon--smaller" src="img/icon-details.svg" alt="">
+                            <p class="card-contract__text fs-sm fs-cl-ppn">Détails</p>   
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
@@ -93,5 +166,7 @@
     </div>
 
 	<script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
   </body>
 </html>

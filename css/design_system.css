@@ -85,6 +85,10 @@ body {
     font-size: var(--fs-lg); 
 }
 
+.fs-md {
+    font-size: var(--fs-md); 
+}
+
 .fs-base {
     font-size: var(--fs-base); 
 }
@@ -99,4 +103,12 @@ body {
 
 .fs-bold {
     font-family: 'avenir-black';
+}
+
+.fs-cl-ppn {
+    color: var(--cl-ppn-main);
+}
+
+.fc-grey-dark {
+    color: var(--cl-txt-dark-grey);
 }

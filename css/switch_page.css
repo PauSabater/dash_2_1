@@ -3,10 +3,12 @@
     src: url('../fonts/AvenirLTStd-Black.otf');
 }
 
+/* WELCOME BOX 
+_________________________________________________________________________________________________ */
 .welcome-box {
     height: auto;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% auto;
     margin: var(--header-height) 0 var(--mg-md);
 }
 
@@ -15,26 +17,192 @@
 }
 
 .welcome-box__name {
-    font-family: 'avenir-black'; 
     font-size: var(--fs-xl);
+    margin-bottom: var(--mg-sm);
 }
 
-/* CONTRACTS */
+/* WELCOME BOX: CHART
+_________________________________________________________________________________________________ */
+
+.welcome-box__chart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 270px; 
+    width: 270px;
+    margin-right: 20px;
+}
+
+.welcome-box__chart-img {
+    z-index: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+}
+
+.chart__value {
+    z-index: 10;
+}
+
+.chart__column-container {
+    --graph-column-width: 60px; 
+    --graph-column-color: var(--cl-ppn-medium); 
+    --graph-column-max-height: 250px; 
+
+    display: flex;
+    flex-direction: column-reverse;
+    width: var(--graph-column-width); 
+    height: var(--graph-column-max-height);
+    margin-right: 10px;
+}
+
+.chart__column-container:before {
+    content: "";
+    width: 60px; 
+    height: 10px; 
+    border-radius: 0 0 10px 10px;
+    background: var(--graph-column-color);
+}
+
+.chart__column-container:after {
+    content: "";
+    width: var(--graph-column-width);  
+    height: 10px; 
+    border-radius: 10px 10px 0 0;
+    background: var(--graph-column-color);
+}
+
+.chart__column {
+    width: var(--graph-column-width); 
+    height: calc(var(--graph-column-max-height) * var(--height-percentage)); 
+    background: var(--graph-column-color);
+    transition: height 0.5s ease;
+}
+
+.welcome-box__address {
+    margin-bottom: var(--mg-md);
+}
+
+.welcome-box__value {
+    color: #0FC4B2;
+}
+
+/* CONTRACTS
+_________________________________________________________________________________________________ */
+
 .contracts-container {
     
 
 }
 
 .card-contract {
-    cursor: pointer; 
     width: 100%; 
     height: 150px;
     background: var(--cl-ppn-light);
     border-radius: var(--br-md);
     border: 1px solid var(--cl-br);
+    margin-bottom: var(--mg-md);
 }
 
 .card-contract:hover {
     background: var(--cl-ppn-light-hovered);
-
 }
+
+.contracts__title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--mg-lg) 0 var(--mg-md);
+}
+
+.contracts__title-text {
+    padding-left: 20px; 
+}
+
+.contracts__btn-text {
+    cursor: pointer;
+    padding-right: 20px;
+    color: var(--cl-txt-dark-grey);
+    transition: color 0.3s ease;
+}
+
+.contracts__btn-text:hover {
+    padding-right: 20px;
+    color: var(--cl-txt-black);
+}
+
+.contracts__title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    border-radius: 5px;
+    background: var(--cl-ppn-main);
+}
+
+.contracts__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-contract {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 210px 160px auto 150px 230px;
+    height: 110px; 
+    padding: 0 50px 0 50px;
+}
+
+.card-contract__text {
+    align-self: center;
+}
+
+.card-contract__logo {
+    display: flex;
+    align-items: center;
+}
+
+.card-contract__logo-img {
+    height: 70px; 
+}
+
+.contract-action-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contract-action {
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contract-action__icon {
+    height: 15px;
+    transition: transform 0.3s; 
+}
+
+.contract-action:hover .contract-action__icon {
+
+    transform: translateY(-5px);
+}
+
+.contract-action .card-contract__text {
+    margin-top: var(--mg-sm);
+}
+
+.contract-action__icon.icon--smaller {
+    height: 10px;
+    padding-top: 5px;
+}
+

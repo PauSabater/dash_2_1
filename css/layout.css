@@ -1,12 +1,14 @@
 body {
     --header-height: 70px; 
+    --nav-side-width: 300px;
 }
 
 .main-layout {
     display: grid;
-    grid-template-columns: 300px 80%;
+    grid-template-columns: var(--nav-side-width) auto;
 }
 
 .content-container {
     padding: 60px; 
+    max-width: 1200px;
 }
