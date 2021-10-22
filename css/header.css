@@ -1,5 +1,8 @@
 .header {
     position: fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 10;
     top: 0;
     left: 0; 
@@ -7,5 +10,59 @@
     height: var(--header-height);
     box-shadow: 0 0 7px 0 rgb(0 0 0 / 10%);
     background: white; 
+}
 
+.header .logo-container {
+    display: flex;
+    height: var(--header-height); 
+    width: 180px;
+    margin-left: var(--mg-lg); 
+}
+
+.header .header__user-alerts {
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+}
+
+.header .header__icon-logo {
+    height: 25px;
+}
+
+.header .header__user-container {
+    display: flex;
+    align-items: baseline;
+    margin-right: 50px;
+    height:30px;
+}
+
+.header .header__user-name {
+    font-size: 14px;
+    padding: 0 var(--pad-sm) 0;
+    color: var(--cl-ppn-main);
+
+}
+
+.header .header__user-name:after {
+    content: ">";
+    position: absolute;
+    margin-left: 5px;
+}
+
+.header .header__alerts {
+    cursor: pointer;
+    margin-right: var(--mg-md);
+    height: 20px; 
+}
+
+.header .header__alerts:before {
+    content: "";
+    height: 30px;
+    width: 30px; 
+    background: var(--cl-ppn-medium); 
+
+}
+
+.header .header__alerts-icon {
+    height: 20px;
 }

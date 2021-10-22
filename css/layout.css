@@ -4,9 +4,9 @@ body {
 
 .main-layout {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 300px 80%;
 }
 
 .content-container {
-    padding: var(--pad-lg); 
+    padding: 60px; 
 }

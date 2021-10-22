@@ -16,7 +16,7 @@
 
 .welcome-box__name {
     font-family: 'avenir-black'; 
-    font-size: clamp(50px, 4vw, 150px);
+    font-size: var(--fs-xl);
 }
 
 /* CONTRACTS */
