@@ -9,6 +9,18 @@ body {
 }
 
 .content-container {
+    min-height: 100vh;
     padding: 60px; 
     max-width: 1200px;
+}
+
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 200vh;
+    pointer-events: none;
+    background-color: #FFF6ED;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
 }

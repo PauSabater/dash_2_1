@@ -24,17 +24,24 @@
     text-decoration: none;
 }
 
-.nav-side .item--focus:before {
+.nav-side .nav-side__item:before {
     content: ""; 
     z-index: 0; 
     position: absolute;
     top: 50%;
     left: 0; 
-    background: var(--cl-ppn-medium); 
     height: 50px;
     width: 100%;
     border-radius: 0 25px 25px 0;
+    opacity: 0;
+    background: var(--cl-ppn-medium);
     transform: translateY(-50%);
+    transition: opacity 0.5s ease; 
+}
+
+.nav-side__item.item--focus:before {
+    opacity: 1; 
+
 }
 
 .nav-side__item.item--focus .nav-side__link {
