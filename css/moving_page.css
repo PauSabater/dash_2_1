@@ -246,4 +246,53 @@ aside ul li {
 
 .mover-card p {
     padding-left: 20px;
+    display: flex;
+    flex: 1;
+}
+
+/* .mover-card__actions ul {
+    display: none;
+}
+
+.mover-card__actions:hover ul {
+    display: block;
+} */
+
+.mover-card__actions {
+    position: relative;
+}
+
+.box-actions {
+    display: none;
+    border: 1px solid grey;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 200px;
+    line-height: 2;
+    padding: 10px 20px;
+    height: auto;
+    background: white;
+    list-style: none;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.box-actions.show {
+    display: block;
+}
+
+.box-actions li a {
+    color: #212431;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-actions li a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    border-right: none;
 }

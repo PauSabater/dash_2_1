@@ -67,3 +67,11 @@ function activateMenuLink(url) {
 }
 
 })
+
+/* More Actions - To do List */
+
+document.querySelector(".more-actions").addEventListener("click", openActions);
+function openActions() {
+  var element = document.querySelector(".box-actions");
+  element.classList.toggle("show");
+}
