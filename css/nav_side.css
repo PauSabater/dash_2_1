@@ -57,7 +57,6 @@
     transition: color 0.3s;
     background-repeat: no-repeat;
     padding-left: var(--pad-lg);
-    padding-top: var(--pad-xsm);
 }
 
 .nav-side .nav-side__link:hover {
