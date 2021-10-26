@@ -46,7 +46,8 @@ body {
     /* PADDING */
     --pad-lg: 50px; 
     --pad-md: 20px; 
-    --pad-sm: 20px; 
+    --pad-sm: 20px;
+    --pad-xsm: 10px;
 
     /* MARGINS */
     --mg-lg: 50px;

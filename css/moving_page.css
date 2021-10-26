@@ -246,4 +246,68 @@ aside ul li {
 
 .mover-card p {
     padding-left: 20px;
+    display: flex;
+    flex: 1;
+}
+
+.mover-card.checked p {
+    text-decoration: line-through;
+}
+
+/* .mover-card__actions ul {
+    display: none;
+}
+
+.mover-card__actions:hover ul {
+    display: block;
+} */
+
+.mover-card__actions {
+    position: relative;
+}
+
+.box-actions {
+    display: none;
+    border: 1px solid #C9C9C9;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 200px;
+    line-height: 2;
+    height: auto;
+    background: white;
+    list-style: none;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.box-actions.show {
+    display: block;
+}
+
+.box-actions li {
+    border-bottom: 1px solid #C9C9C9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.box-actions li:last-child {
+    border-bottom: none;
+}
+
+.box-actions li a {
+    color: #212431;
+    /* padding: 5px 10px; */
+    display: flex;
+    align-items: center;
+}
+
+.box-actions li img {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    border-right: none;
 }

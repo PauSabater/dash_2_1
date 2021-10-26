@@ -67,3 +67,27 @@ function activateMenuLink(url) {
 }
 
 })
+
+/* To do List */
+// Open more actions module
+document.querySelector(".more-actions").addEventListener("click", openActions);
+function openActions() {
+  let element = document.querySelector(".box-actions");
+  element.classList.toggle("show");
+}
+
+// Checked task
+let elmtChecked = document.querySelector('.doityourself');
+
+elmtChecked.addEventListener('click', function(e) {
+  let elmtDIV = document.querySelector("#card");
+  elmtDIV.classList.toggle("checked");
+});
+
+// Delete task
+let elmtRemove = document.querySelector('.delete');
+
+elmtRemove.addEventListener('click', function(e) {
+  let elmtDIV = document.querySelector("#card");
+  elmtDIV.remove();
+});
