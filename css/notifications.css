@@ -1,8 +1,8 @@
-.notification_wrap{
+.notification_wrap_inner{
     position: fixed;
 }
 
-.dropdown .notification_wrap {
+.dropdown .notification_wrap_inner {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
@@ -18,21 +18,21 @@
 /*    width: 40px;*/
 /*    position: center;*/
 /*}*/
-.notification_wrap, .dropdown, .notify_item p span{
+.notification_wrap_inner, .dropdown, .notify_item p span{
     color: #605dff;
 }
 
-.notification_wrap, .dropdown, .notify_item .notify_inf .notify_time{
+.notification_wrap_inner, .dropdown, .notify_item .notify_inf .notify_time{
     font-size: 9px;
 }
-.notification_wrap1{
+.notification_wrap_outer{
     position: relative;
     height: 30px;
     width: 20px;
     top:-40px;
 }
 
-.notification_wrap{
+.notification_wrap_inner{
     position: absolute;
     z-index: 999;
     top: 30px;
@@ -45,14 +45,14 @@
     visibility: hidden;
 }
 
-.notification_wrap1:hover .notification_wrap{
+.notification_wrap_outer:hover .notification_wrap_inner{
     visibility: visible;
 }
 
 .dropdown{
     width: 339px;
 }
-.notification_wrap:before{
+.notification_wrap_inner:before{
     content: "Notifications";
     color: #817BFE;
     font-size: 24px;

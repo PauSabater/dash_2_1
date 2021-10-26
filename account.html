@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/notifications.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>$(document).ready(function () {
-        $(".notification_icon .header__alerts-icon").click(function (){
+        $(".notification_icon .header__alerts-icon").click(function () {
             $(".dropdown").toggleClass("active")
         })
     });</script>
@@ -32,49 +32,38 @@
             <div class="notification_icon">
                 <img class="header__alerts-icon" src="img/icon-bell.svg" alt="">
                 <img class="header__icon-logo" src="img/icon-user.svg" alt="">
-                                    <p class="header__user-name">Matéo Boutry</p>
+                <p class="header__user-name">Matéo Boutry</p>
             </div>
-            <div class="notification_wrap">
-                <div class="dropdown">
-                    <div class="notify_item">
-                        <div class="notify_img">
-                            <img src="img/frame_5.svg" alt="not_pic" style="width: 50px;">
-                        </div>
-                        <div class="notify_info_unread">
-                            <p>
-                                A faire avant mercredi 7 octobre
-                            </p>
-                            <span class="notify_time_unread">one day ago</span>
-                        </div>
-                    </div>
+            <div class="notification_wrap_outer">
+                <div class="notification_wrap_inner">
                     <div class="dropdown">
                         <div class="notify_item">
                             <div class="notify_img">
-                                <img src="img/frame_6.svg" alt="not_pic" style="width: 50px;">
+                                <img src="img/frame_5.svg" alt="not_pic" style="width: 50px;">
                             </div>
-                            <div class="notify_info">
+                            <div class="notify_info_unread">
                                 <p>
                                     A faire avant mercredi 7 octobre
                                 </p>
-                                <span class="notify_time">one day ago</span>
+                                <span class="notify_time_unread">one day ago</span>
                             </div>
                         </div>
                         <div class="dropdown">
                             <div class="notify_item">
                                 <div class="notify_img">
-                                    <img src="img/frame_3.svg" alt="not_pic" style="width: 50px;">
+                                    <img src="img/frame_6.svg" alt="not_pic" style="width: 50px;">
                                 </div>
                                 <div class="notify_info">
                                     <p>
                                         A faire avant mercredi 7 octobre
                                     </p>
-                                    <span class="notify_time">one week ago</span>
+                                    <span class="notify_time">one day ago</span>
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <div class="notify_item">
                                     <div class="notify_img">
-                                        <img src="img/frame_4.svg" alt="not_pic" style="width: 50px;">
+                                        <img src="img/frame_3.svg" alt="not_pic" style="width: 50px;">
                                     </div>
                                     <div class="notify_info">
                                         <p>
@@ -86,7 +75,7 @@
                                 <div class="dropdown">
                                     <div class="notify_item">
                                         <div class="notify_img">
-                                            <img src="img/frame_5.svg" alt="not_pic" style="width: 50px;">
+                                            <img src="img/frame_4.svg" alt="not_pic" style="width: 50px;">
                                         </div>
                                         <div class="notify_info">
                                             <p>
@@ -98,36 +87,54 @@
                                     <div class="dropdown">
                                         <div class="notify_item">
                                             <div class="notify_img">
-                                                <img src="img/frame_6.svg" alt="not_pic" style="width: 50px;">
+                                                <img src="img/frame_5.svg" alt="not_pic" style="width: 50px;">
                                             </div>
-                                            <div class="notify_info_unread">
+                                            <div class="notify_info">
                                                 <p>
                                                     A faire avant mercredi 7 octobre
                                                 </p>
-                                                <span class="notify_time_unread">one week ago</span>
+                                                <span class="notify_time">one week ago</span>
                                             </div>
                                         </div>
                                         <div class="dropdown">
                                             <div class="notify_item">
                                                 <div class="notify_img">
-                                                    <img src="img/frame_7.svg" alt="not_pic" style="width: 50px;">
+                                                    <img src="img/frame_6.svg" alt="not_pic" style="width: 50px;">
                                                 </div>
-                                                <div class="notify_info">
+                                                <div class="notify_info_unread">
                                                     <p>
                                                         A faire avant mercredi 7 octobre
                                                     </p>
-                                                    <span class="notify_time">one week ago</span>
+                                                    <span class="notify_time_unread">one week ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <div class="notify_item">
+                                                    <div class="notify_img">
+                                                        <img src="img/frame_7.svg" alt="not_pic" style="width: 50px;">
+                                                    </div>
+                                                    <div class="notify_info">
+                                                        <p>
+                                                            A faire avant mercredi 7 octobre
+                                                        </p>
+                                                        <span class="notify_time">one week ago</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
 
-
-
+                                <div class="loader"></div>
                             </div>
-
-                            <div class="loader"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </nav>
 
