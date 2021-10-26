@@ -25,13 +25,30 @@
 .notification_wrap, .dropdown, .notify_item .notify_inf .notify_time{
     font-size: 9px;
 }
+.notification_wrap1{
+    position: relative;
+    height: 30px;
+    width: 20px;
+    top:-40px;
+}
+
 .notification_wrap{
     position: absolute;
-    width: 339px;
-    height: 494px;
-    right: 5px;
-    top: 100px;
+    z-index: 999;
+    top: 30px;
+    left: -250px;
+    width: 340px;
+    padding: var(--pad-sm);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background: white;
+    border-radius: 10px;
+    visibility: hidden;
 }
+
+.notification_wrap1:hover .notification_wrap{
+    visibility: visible;
+}
+
 .dropdown{
     width: 339px;
 }
