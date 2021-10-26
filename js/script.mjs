@@ -1,7 +1,5 @@
 window.addEventListener('load', () => {
 
-    console.log("heyy");
-
     activateInitialMenuLink();
 
     barba.init({
@@ -21,42 +19,16 @@ window.addEventListener('load', () => {
         }]
       });
 
-      /*
-function loaderIn() {
-    // GSAP tween to stretch the loading screen across the whole screen
-    return gsap.fromTo(loader,
-        {
-            rotation: 10,
-            scaleX: 0,
-            xPercent: -5
-        },
-        {
-            duration: 0.8,
-            xPercent: 0,
-            scaleX: 1,
-            rotation: 0,
-            ease: 'power4.inOut',
-            transformOrigin: 'left center'
-        });
-}
-
-
-function loaderAway() {
-    // GSAP tween to hide loading screen
-    return gsap.to(loader, {
-        duration: 0.8,
-        scaleX: 0,
-        xPercent: 5,
-        rotation: -10,
-        transformOrigin: 'right center',
-        ease: 'power4.inOut'
-    });
-}
-*/
-
 function activateInitialMenuLink() {
-  console.log("path is "+location.pathname);
-  document.querySelector(`[href="${location.pathname}"]`).parentElement.classList.add("item--focus");
+    const pathname = location.pathname;
+    document.querySelector(`[href="${pathname}"]`).parentElement.classList.add("item--focus");
+
+    if (pathname === "/empty_contracts.html") {
+        addContractBtnEvent("#addContract", "/empty_contracts.html", "/contracts.html"); 
+
+    } else if (pathname === "/empty_moving.html") {
+        addContractBtnEvent("#addMoving", "/empty_moving.html", "/moving.html"); 
+    }
 }
 
 function activateMenuLink(url) {
@@ -65,5 +37,14 @@ function activateMenuLink(url) {
     document.querySelector(".item--focus").classList.remove("item--focus");
     document.querySelector(`[href="/${pathname}"]`).parentElement.classList.add("item--focus");
 }
+
+function addContractBtnEvent(id_btn, url_query, new_url){
+    document.querySelector(id_btn).addEventListener("click", () => {
+        const el_link = document.querySelector(`[href="${url_query}"]`); 
+        el_link.href = new_url;
+        el_link.parentElement.classList.add("item--focus");
+        console.log("parent is "+el_link.parentElement.classList);
+    }) 
+  }
 
 })

@@ -1,0 +1,79 @@
+.contract-action-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contract-action {
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contract-action__icon {
+    height: 15px;
+    transition: transform 0.3s; 
+}
+
+.contract-action:hover .contract-action__icon {
+
+    transform: translateY(-5px);
+}
+
+.contract-action .card-contract__text {
+    margin-top: var(--mg-sm);
+}
+
+.contract-action__icon.icon--smaller {
+    height: 10px;
+    padding-top: 5px;
+}
+
+.empty-contracts-container {
+  margin: auto;
+  height: 150px;
+  width: 35%;
+  padding: 10px;
+  font-size: var(--fs-base);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 4rem;
+  align-items: center;
+  bottom: 0;
+}
+
+.button {
+  background-color: #5A52FF;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 1.6rem;
+  text-align: center;
+}
+
+  
+.empty-movers-container {
+    margin: auto;
+    height: 300px;
+    width: 75%;
+    padding: 10px;
+    font-size: var(--fs-base);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: var(--pad-sm) var(--pad-md);
+    min-width: 250px;
+  }
+}

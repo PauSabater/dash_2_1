@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/nav_side.css">
     <link rel="stylesheet" href="css/switch_page.css">
     <link rel="stylesheet" href="css/moving_page.css">
+    <link rel="stylesheet" href="css/empty_contracts.css">
   </head>
   <body data-barba="wrapper">
     <nav class="header">
@@ -64,18 +65,25 @@
         <main data-barba="container" data-barba-namespace="home">
 
             <div class="content-container">
-
-                <!-- CONTENT HERE -->
-                <p style="margin-top: 100px">HELLO</p>
-
-
+                <div class="empty-contracts-container">
+                    <div class="contracts__title">
+                        <lottie-player autoplay="" loop="" class="image lottie" src="img/homepage-2021-animation.json" background="transparent"> </lottie-player>
+                    </div>
+                    <h4><p style="text-align:center">Aucun abonnement ajouté</p></h4>
+                    <h5><p style="text-align:center">Reprenez le contrôle de vos souscriptions en ajoutant vos abonnements</p></h5>
+                    <div class="btn-container">
+                        <a class="button" role="button" href='/contracts.html' id="addContract">Ajouter mes abonnements</a>
+                    </div>
+                </div>
             </div>
+
         </main>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     <script type="module" src="js/script.mjs"></script>
 
   </body>

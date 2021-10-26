@@ -24,3 +24,23 @@ body {
     visibility: hidden;
     opacity: 0;
 }
+
+
+/* MEDIA QUERIES MOBILE */ 
+@media screen and (max-width: 1000px) {
+    body {
+       --header-height: 50px;
+    }
+
+    .main-layout {
+        display: block; 
+        grid-template-columns: 100%;
+    }
+
+    .content-container {
+        display: block;
+        width: 75vw;
+        margin: 0 5vw;
+        padding: 0;
+    }
+}
