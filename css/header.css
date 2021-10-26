@@ -66,3 +66,9 @@
 .header .header__alerts-icon {
     height: 20px;
 }
+
+
+/* MEDIA QUERIES MOBILE */ 
+@media screen and (max-width: 1000px) {
+
+}
