@@ -12,6 +12,7 @@
     margin-top: 150px; 
     padding-inline-start: 0px;
     padding-right: var(--pad-lg);
+    padding-left: var(--pad-lg);
 }
 
 .nav-side .nav-side__item {
@@ -51,13 +52,39 @@
 .nav-side .nav-side__link {
     z-index: 10;
     cursor: pointer;
-    padding-left: var(--pad-lg);
     text-decoration: none;
     font-size: var(--fs-base);
     color: var(--cl-txt-dark-grey);
-    transition: color 0.3s;  
+    transition: color 0.3s;
+    background-repeat: no-repeat;
+    padding-left: var(--pad-lg);
+    padding-top: var(--pad-xsm);
 }
 
 .nav-side .nav-side__link:hover {
     color: var(--cl-black); 
+}
+
+.background-icon-home{
+    background-image: url("../img/icon-home.svg");
+}
+
+.background-icon-docs{
+    background-image: url("../img/icon-docs.svg");
+}
+
+.background-icon-truck{
+    background-image: url("../img/icon-truck.svg");
+}
+
+.background-icon-faq{
+    background-image: url("../img/icon-faq.svg");
+}
+
+.background-icon-qna{
+    background-image: url("../img/icon-qna.svg");
+}
+
+.background-icon-person{
+    background-image: url("../img/icon-person.svg");
 }
