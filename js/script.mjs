@@ -93,7 +93,7 @@ elmtRemove.addEventListener('click', function(e) {
   elmtDIV.remove();
 });
 
-/* Add Task - Accordion */
+/* Add Task - Accordion  */
 let acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
