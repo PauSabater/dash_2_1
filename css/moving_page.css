@@ -224,7 +224,7 @@ aside ul li {
     border-radius: 18px 5px 18px 5px;
     padding: 10px 20px;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: 0 2px 8px 0 rgb(90 82 255 / 40%);
     cursor: pointer;
 }
@@ -376,6 +376,88 @@ aside ul li {
     border-right: none;
 }
 
+/* Moving Step */
+.movin-step {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.movin-step img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.movin-step a {
+    margin: 0 auto;
+}
+
+.movin-step .mover-step__btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px 0;
+    background-color: #635fe2;
+    margin: 30px auto 0;
+}
+
+.movin-step .mover-step__btn.prev {
+    color: #635fe2;
+    background-color: #fff;
+}
+
+.mover-step__btn-link {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.movin-step .panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    padding: 20px 0;
+}
+
+.movin-step .panel li {
+    border: 1px solid #D3D6DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 90px;
+    margin: 15px 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 18px 5px 18px 5px;
+}
+
+.movin-step .panel li:hover {
+    border: 1px solid #5A52FF;
+}
+
+.movin-step .panel li img {
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+.movin-step .panel li p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.movin-step .btn-final {
+    width: 250px;
+    height: 60px;
+    border-radius: 18px 5px 18px 5px;
 
 
 /* MEDIA QUERIES MOBILE */ 
@@ -384,7 +466,4 @@ aside ul li {
         grid-template-columns: 50px 50px auto auto auto;
         padding: 0 var(--pad-md)
     }
-
-
-
 }
