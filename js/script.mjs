@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
      */
     function activateInitialMenuLink() {
         const pathname = location.pathname;
-        document.querySelector(`[href="${pathname}"]`).parentElement.classList.add("item--focus");
+        //document.querySelector(`[href="${pathname}"]`).parentElement.classList.add("item--focus");
 
         if (pathname === "/empty_contracts.html") {
             addContractBtnEvent("#addContract", "/empty_contracts.html", "/contracts.html"); 
@@ -228,9 +228,9 @@ window.addEventListener('load', () => {
     let btnCloseMoving = document.querySelector('.mover-step__btn');
 
     btnCloseMoving.addEventListener('click', function(e) {
-      btnCloseMoving.style.background='#000000';
-      btnCloseMoving.style.textdecoration="line-through";
-      btnCloseMoving.style.opacity="0.3";
+      btnCloseMoving.style.background = '#000000';
+      btnCloseMoving.style.textDecoration = "line-through";
+      btnCloseMoving.style.opacity = "0.3";
     }
 
     )});
