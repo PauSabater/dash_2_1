@@ -39,8 +39,11 @@ function activateMenuLink(url) {
 }
 
 /* To do List */
+
 // Open more actions module
-document.querySelector(".more-actions").addEventListener("click", openActions);
+let elmtActions = document.querySelector(".more-actions");
+elmtActions.addEventListener("click", openActions);
+
 function openActions() {
   let element = document.querySelector(".box-actions");
   element.classList.toggle("show");
@@ -61,6 +64,22 @@ elmtRemove.addEventListener('click', function(e) {
   let elmtDIV = document.querySelector("#card");
   elmtDIV.remove();
 });
+
+
+/* Add Task - Accordion */
+let acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "flex") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "flex";
+    }
+  });
+}
 
 
 function addContractBtnEvent(id_btn, url_query, new_url){
