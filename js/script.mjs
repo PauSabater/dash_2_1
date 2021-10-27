@@ -165,3 +165,13 @@ function addContractBtnEvent(id_btn, url_query, new_url){
   }
 
 })
+
+/* Moving - Button Cloturer demenagment */
+
+let btnCloseMoving = document.querySelector('.mover-step__btn');
+
+btnCloseMoving.addEventListener('click', function(e) {
+  btnCloseMoving.style.background='#000000';
+  btnCloseMoving.style.textdecoration="line-through";
+  btnCloseMoving.style.opacity="0.3";
+});
