@@ -324,6 +324,7 @@ aside ul li {
 
 .mover-card.checked p {
     text-decoration: line-through;
+    opacity: 0.3;
 }
 
 .mover-card__actions {

@@ -128,8 +128,8 @@ elmtRemove.addEventListener('click', function(e) {
   progressBarRemoveTask();
 });
 
-
 /* Add Task - Accordion */
+
 let acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard switch</title>
+    <link rel="stylesheet" href="css/design_system.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav_side.css">
+    <link rel="stylesheet" href="css/switch_page.css">
+    <link rel="stylesheet" href="css/moving_page.css">
+  </head>
+  <body data-barba="wrapper">
+    <nav class="header">
+        <!--  HEADER ELEMENT -->
+        <a href="" class="logo-container">
+            <img src="img/logo.svg" alt="" class="logo__img">
+        </a>
+
+        <!--  CONTAINER WITH ALERTS AND USER -->
+        <div class="header__user-alerts">
+            <div class="header__alerts">
+                <img class="header__alerts-icon" src="img/icon-bell.svg" alt="" class="">
+            </div>
+            <div class="header__user-container">
+                <img class="header__icon-logo" src="img/icon-user.svg" alt="" class="">
+                <p class="header__user-name">Matéo Boutry</p>
+            </div>
+        </div>
+
+        <div class="loader"></div>
+    </nav>
+
+    <div class="main-layout">
+
+        <nav class="nav-side">
+            <!--  TODO: SIDE ELEMENT -->
+            <ul class="nav-side__list">
+                <li class="nav-side__item fs-semibold">
+                    <a href="/welcome.html" class="nav-side__link">Accueil</a>
+                </li>
+                <li class="nav-side__item fs-semibold">
+                    <a href="/contracts.html" class="nav-side__link">Gestion de contrats</a>
+                </li>
+                <li class="nav-side__item fs-semibold">
+                    <a href="/moving.html" class="nav-side__link">Déménagement</a>
+                </li>
+                <li class="nav-side__item fs-semibold">
+                    <a href="/account.html" class="nav-side__link">Compte</a>
+                </li>
+                <li class="nav-side__item fs-semibold">
+                    <a href="/help.html" class="nav-side__link">Aide</a>
+                </li>
+                <li class="nav-side__item fs-semibold">
+                    <a href="/faqs.html" class="nav-side__link">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div></div>
+
+        <main data-barba="container" data-barba-namespace="home">
+
+            <div class="content-container">
+
+
+                <!-- MOVER PART -->
+                <section class="mover">
+
+                    <!-- Title & Description -->
+                    <div class="mover-header">
+                        <div>
+                            <h1 class="mover-header__title">Indiquez l'adresse</h1>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    
+                </section>
+
+            </div> <!--  END OF PAGE CONTENT -->
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script type="module" src="js/script.mjs"></script>
+
+  </body>
+</html>
