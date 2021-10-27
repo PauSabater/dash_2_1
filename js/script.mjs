@@ -89,8 +89,8 @@ function progressBarBack() {
   progressBarBack.classList.remove('active');
 }
 function progressBarAddTask() {
-  var progressBar = document.getElementById("progressbar");
-  var li = document.createElement("li");
+  let progressBar = document.getElementById("progressbar");
+  let li = document.createElement("li");
   progressBar.appendChild(li);
   progressBarFinishState();
 }
@@ -141,6 +141,9 @@ for (let i = 0; i < acc.length; i++) {
     } else {
       panel.style.display = "flex";
     }
+    panel.addEventListener("click", function() {
+        progressBarAddTask()
+    })
   });
 }
 
