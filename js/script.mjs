@@ -41,12 +41,19 @@ function activateMenuLink(url) {
 /* To do List */
 
 // Open more actions module
-let elmtActions = document.querySelector(".more-actions");
-elmtActions.addEventListener("click", openActions);
+
+let elmtActions = document.getElementsByClassName("more-actions");
+
+for (let i = 0; i < elmtActions.length; i++) {
+  elmtActions[i].addEventListener("click", openActions);
+}
 
 function openActions() {
-  let element = document.querySelector(".box-actions");
-  element.classList.toggle("show");
+    let allChild = this.parentNode.getElementsByClassName("box-actions");
+    //let element = document.querySelector(".box-actions");
+    for (let i = 0; i < allChild.length; i++) {
+        allChild[i].classList.toggle("show");
+    }
 }
 
 // Progress bar function
