@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1">
     <title>Dashboard switch</title>
     <link rel="stylesheet" href="css/design_system.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -11,6 +10,7 @@
     <link rel="stylesheet" href="css/nav_side.css">
     <link rel="stylesheet" href="css/switch_page.css">
     <link rel="stylesheet" href="css/moving_page.css">
+    <link rel="stylesheet" href="css/notifications.css">
   </head>
   <body data-barba="wrapper">
     <nav class="header">
@@ -23,6 +23,21 @@
         <div class="header__user-alerts">
             <div class="header__alerts">
                 <img class="header__alerts-icon" src="img/icon-bell.svg" alt="" class="">
+                <div class="notification_wrap_outer">
+                    <div class="notification_dropdown">
+                        <div class="notification_dropdown_title fs-md">Notifications</div>
+                        <ul>
+                            <li class="notif_item">
+                                <a href="#" class="notif-link background-icon-wifi fs-sm">Augmentation du la mensualité</a>
+                                <div class="notif-time fs-xsm">Il y a un jour</div>
+                            </li>
+                            <li class="notif_item">
+                                <a href="#" class="notif-link background-icon-savings fs-sm">Fin de l’engagement</a>
+                                <div class="notif-time fs-xsm">Il y a un jour</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="header__user-container">
                 <img class="header__icon-logo" src="img/icon-user.svg" alt="" class="">
@@ -36,25 +51,25 @@
     <div class="main-layout">
 
         <nav class="nav-side">
-            <!--  TODO: SIDE ELEMENT -->
+            <!--  SIDE ELEMENT -->
             <ul class="nav-side__list">
                 <li class="nav-side__item fs-semibold">
-                    <a href="/welcome.html" class="nav-side__link">Accueil</a>
+                    <a href="/welcome.html" class="nav-side__link background-icon-home">Accueil</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/contracts.html" class="nav-side__link">Gestion de contrats</a>
+                    <a href="/empty_contracts.html" class="nav-side__link background-icon-docs">Gestion de contrats</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/moving.html" class="nav-side__link">Déménagement</a>
+                    <a href="/empty_moving.html" class="nav-side__link background-icon-truck">Déménagement</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/account.html" class="nav-side__link">Compte</a>
+                    <a href="/account.html" class="nav-side__link background-icon-person">Compte</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/help.html" class="nav-side__link">Aide</a>
+                    <a href="/help.html" class="nav-side__link background-icon-qna">Aide</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/faqs.html" class="nav-side__link">FAQs</a>
+                    <a href="/faqs.html" class="nav-side__link background-icon-faq">FAQs</a>
                 </li>
             </ul>
         </nav>
@@ -77,28 +92,10 @@
                     <!--  TODO: CHART ELEMENT -->
                     <div class="welcome-box__chart">
                         <img class="welcome-box__chart-img" src="img/graph1.svg" alt="">
-                        <p class="chart__value">Total abonnements</p>
-                        <p class="chart__value fc-grey-dark fs-bold fs-md">270e/mois</p>
-
-                        <!--
-                        <div class="chart__column-container">
-                            <div style="--height-percentage: 0.8;" class="chart__column"></div>
+                        <div class="contract-result">
+                            <p class="chart__value">Total abonnements</p>
+                            <p class="chart__value fc-grey-dark fs-bold fs-md">270e/mois</p>
                         </div>
-                        <div class="chart__column-container">
-                            <div style="--height-percentage: 0.5;" class="chart__column"></div>
-                        </div>
-                        <div class="chart__column-container">
-                            <div style="--height-percentage: 0.4;" class="chart__column"></div>
-                        </div>
-                        <div class="chart__column-container">
-                            <div style="--height-percentage: 0.25;" class="chart__column"></div>
-                        </div>
-                        <div class="chart__column-container">
-                            <div style="--height-percentage: 0.15;" class="chart__column"></div>
-                        </div>
-                        -->
-
-
                     </div>
                 </div>
 

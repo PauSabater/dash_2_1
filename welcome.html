@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/nav_side.css">
     <link rel="stylesheet" href="css/switch_page.css">
     <link rel="stylesheet" href="css/moving_page.css">
+    <link rel="stylesheet" href="css/notifications.css">
   </head>
   <body data-barba="wrapper">
     <nav class="header">
@@ -23,6 +24,21 @@
         <div class="header__user-alerts">
             <div class="header__alerts">
                 <img class="header__alerts-icon" src="img/icon-bell.svg" alt="" class="">
+                <div class="notification_wrap_outer">
+                    <div class="notification_dropdown">
+                        <div class="notification_dropdown_title fs-md">Notifications</div>
+                        <ul>
+                            <li class="notif_item">
+                                <a href="#" class="notif-link background-icon-wifi fs-sm">Augmentation du la mensualité</a>
+                                <div class="notif-time fs-xsm">Il y a un jour</div>
+                            </li>
+                            <li class="notif_item">
+                                <a href="#" class="notif-link background-icon-savings fs-sm">Fin de l’engagement</a>
+                                <div class="notif-time fs-xsm">Il y a un jour</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="header__user-container">
                 <img class="header__icon-logo" src="img/icon-user.svg" alt="" class="">
@@ -36,25 +52,25 @@
     <div class="main-layout">
 
         <nav class="nav-side">
-            <!--  TODO: SIDE ELEMENT -->
+            <!--  SIDE ELEMENT -->
             <ul class="nav-side__list">
                 <li class="nav-side__item fs-semibold">
-                    <a href="/welcome.html" class="nav-side__link">Accueil</a>
+                    <a href="/welcome.html" class="nav-side__link background-icon-home">Accueil</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/contracts.html" class="nav-side__link">Gestion de contrats</a>
+                    <a href="/empty_contracts.html" class="nav-side__link background-icon-docs">Gestion de contrats</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/moving.html" class="nav-side__link">Déménagement</a>
+                    <a href="/empty_moving.html" class="nav-side__link background-icon-truck">Déménagement</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/account.html" class="nav-side__link">Compte</a>
+                    <a href="/account.html" class="nav-side__link background-icon-person">Compte</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/help.html" class="nav-side__link">Aide</a>
+                    <a href="/help.html" class="nav-side__link background-icon-qna">Aide</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/faqs.html" class="nav-side__link">FAQs</a>
+                    <a href="/faqs.html" class="nav-side__link background-icon-faq">FAQs</a>
                 </li>
             </ul>
         </nav>
