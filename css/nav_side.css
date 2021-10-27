@@ -63,29 +63,15 @@
     color: var(--cl-black); 
 }
 
-.background-icon-home{
-    background-image: url("../img/icon-home.svg");
+.item__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+    transform: translateY(-50%);
 }
 
-.background-icon-docs{
-    background-image: url("../img/icon-docs.svg");
-}
-
-.background-icon-truck{
-    background-image: url("../img/icon-truck.svg");
-}
-
-.background-icon-faq{
-    background-image: url("../img/icon-faq.svg");
-}
-
-.background-icon-qna{
-    background-image: url("../img/icon-qna.svg");
-}
-
-.background-icon-person{
-    background-image: url("../img/icon-person.svg");
-}
 
 /* MEDIA QUERIES MOBILE */ 
 @media screen and (max-width: 1000px) {
@@ -131,4 +117,9 @@
     .nav-side .nav-side__item:before {
         border-radius: 25px 0px 0px 25px;
     } 
+
+    .item__icon {
+        right: 17px;
+        left: auto; 
+    }
 }

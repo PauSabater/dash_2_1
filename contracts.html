@@ -48,21 +48,27 @@
             <!--  SIDE ELEMENT -->
             <ul class="nav-side__list">
                 <li class="nav-side__item fs-semibold">
+                    <img src="img/icon-home.svg" alt="" class="item__icon">
                     <a href="/welcome.html" class="nav-side__link">Accueil</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
+                    <img src="img/icon-docs.svg" alt="" class="item__icon">
                     <a href="/contracts.html" class="nav-side__link">Gestion de contrats</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
+                    <img src="img/icon-truck.svg" alt="" class="item__icon">
                     <a href="/empty_moving.html" class="nav-side__link">Déménagement</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
+                    <img src="img/icon-person.svg" alt="" class="item__icon">
                     <a href="/account.html" class="nav-side__link">Compte</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
+                    <img src="img/icon-qna.svg" alt="" class="item__icon">
                     <a href="/help.html" class="nav-side__link">Aide</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
+                    <img src="img/icon-faq.svg" alt="" class="item__icon">
                     <a href="/faqs.html" class="nav-side__link">FAQs</a>
                 </li>
             </ul>
@@ -77,18 +83,18 @@
                     <!--  INFOS -->
                     <div class="welcome-box__infos">
                         <div class="wrapper">
-                            <p class="welcome-box__name fs-lg">Hello, Charles</p>
+                            <p class="welcome-box__name fs-lg">Bonjour Matéo</p>
                         </div>
-                        <p class="welcome-box__address fs-base fc-grey-dark">Rue de Rivoli 14</p>
+                        <p class="welcome-box__address fs-base fc-grey-dark">12 rue Lecourbe, 75015 Paris</p>
                         <p class="welcome-box__address fs-md fc-grey-dark">Grace à Papernest, économisez jusqu'a</p>
-                        <p class="welcome-box__value fs-lg fs-bold fc-grey-dark">305e <span class="fs-md">/ ann</span></p>
+                        <p class="welcome-box__value fs-lg fs-bold fc-grey-dark">305€<span class="fs-md">/ann</span></p>
                     </div>
                     <!--  TODO: CHART ELEMENT -->
                     <div class="welcome-box__chart">
                         <img class="welcome-box__chart-img" src="img/graph1.svg" alt="">
                         <div class="contract-result">
                             <p class="chart__value">Total abonnements</p>
-                            <p class="chart__value fc-grey-dark fs-bold fs-md">270e/mois</p>
+                            <p class="chart__value fc-grey-dark fs-bold fs-md">160€/mois</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +103,7 @@
                     <div class="contracts__title">
                         <p class="contracts__title-text fs-lg fs-semibold ">Mes contrats</p> 
                         <div class="contracts__btn">
-                            <p class="contracts__btn-text fs-base">Ajouter nouveau contrat</p> 
+                            <p class="contracts__btn-text fs-base">Ajouter un contrat</p> 
                             <svg width="25" height="25" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="19.5" stroke="#000000"/>
                                 <path d="M7.5 20H32.5" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
@@ -106,54 +112,63 @@
                         </div>
                     </div>
 
-                    <div class="card-contract">
-                        <div class="card-contract__logo">
-                            <img class="card-contract__logo-img" src="img/planete_oui.svg" alt="" class="">
+                    <div class="card-contract-container">
+                        <div class="card-contract">
+                            <div class="card-contract__logo">
+                                <img class="card-contract__logo-img" src="img/planete_oui.svg" alt="" class="">
+                            </div>
+                            <p class="card-contract__text fs-semibold">Energie</p>
+                            <p class="card-contract__text fs-semibold  fs-cl-ppn">Energie verte</p>
+                            <p class="card-contract__text fs-semibold">115€/mois</p>
+                            <div class="contract-action-container">
+                                <div class="contract-action">
+                                    <img class="contract-action__icon" src="img/icon-magn-glass.svg" alt="">
+                                    <p class="card-contract__text fs-sm fs-cl-ppn">Comparer</p>   
+                                </div>
+                                <div class="contract-action">
+                                    <img class="contract-action__icon icon--smaller" src="img/icon-cross.svg" alt="">
+                                    <p class="card-contract__text fs-sm fs-cl-ppn">Résilier</p>   
+                                </div>
+                                <div class="contract-action">
+                                    <img class="contract-action__icon icon--smaller" src="img/icon-details.svg" alt="">
+                                    <p class="card-contract__text fs-sm fs-cl-ppn">Détails</p>   
+                                </div>
+                            </div>
                         </div>
-                        <p class="card-contract__text fs-semibold">Energie</p>
-                        <p class="card-contract__text fs-semibold  fs-cl-ppn">Energie verte</p>
-                        <p class="card-contract__text fs-semibold">20€/ mois</p>
-                        <div class="contract-action-container">
-                            <div class="contract-action">
-                                <img class="contract-action__icon" src="img/icon-magn-glass.svg" alt="">
-                                <p class="card-contract__text fs-sm fs-cl-ppn">Comparer</p>   
-                            </div>
-                            <div class="contract-action">
-                                <img class="contract-action__icon icon--smaller" src="img/icon-cross.svg" alt="">
-                                <p class="card-contract__text fs-sm fs-cl-ppn">Résilier</p>   
-                            </div>
-                            <div class="contract-action">
-                                <img class="contract-action__icon icon--smaller" src="img/icon-details.svg" alt="">
-                                <p class="card-contract__text fs-sm fs-cl-ppn">Détails</p>   
-                            </div>
-
+                        <div class="card-contract__savings">
+                            <p class="savings__text">Changez de fournisseur pour économiser 205€ /an</p>
                         </div>
                     </div>
 
-                    <div class="card-contract">
-                        <div class="card-contract__logo">
-                            <img class="card-contract__logo-img" src="img/planete_oui.svg" alt="" class="">
-                        </div>
-                        <p class="card-contract__text fs-semibold">Box internet</p>
-                        <p class="card-contract__text fs-semibold  fs-cl-ppn">Fibre max</p>
-                        <p class="card-contract__text fs-semibold">20€/ mois</p>
-                        <div class="contract-action-container">
-                            <div class="contract-action">
-                                <img class="contract-action__icon" src="img/icon-magn-glass.svg" alt="">
-                                <p class="card-contract__text fs-sm fs-cl-ppn">Comparer</p>   
+                    <div class="card-contract-container">
+                        <div class="card-contract">
+                            <div class="card-contract__logo">
+                                <img class="card-contract__logo-img" src="img/logo-orange.svg" alt="" class="">
                             </div>
-                            <div class="contract-action">
-                                <img class="contract-action__icon icon--smaller" src="img/icon-cross.svg" alt="">
-                                <p class="card-contract__text fs-sm fs-cl-ppn">Résilier</p>   
-                            </div>
-                            <div class="contract-action">
-                                <img class="contract-action__icon icon--smaller" src="img/icon-details.svg" alt="">
-                                <p class="card-contract__text fs-sm fs-cl-ppn">Détails</p>   
-                            </div>
+                            <p class="card-contract__text fs-semibold">Box internet</p>
+                            <p class="card-contract__text fs-semibold  fs-cl-ppn">Fibre max</p>
+                            <p class="card-contract__text fs-semibold">45€/mois</p>
+                            <div class="contract-action-container">
+                                <div class="contract-action">
+                                    <img class="contract-action__icon" src="img/icon-magn-glass.svg" alt="">
+                                    <p class="card-contract__text fs-sm fs-cl-ppn">Comparer</p>   
+                                </div>
+                                <div class="contract-action">
+                                    <img class="contract-action__icon icon--smaller" src="img/icon-cross.svg" alt="">
+                                    <p class="card-contract__text fs-sm fs-cl-ppn">Résilier</p>   
+                                </div>
+                                <div class="contract-action">
+                                    <img class="contract-action__icon icon--smaller" src="img/icon-details.svg" alt="">
+                                    <p class="card-contract__text fs-sm fs-cl-ppn">Détails</p>   
+                                </div>
 
+                            </div>
                         </div>
-
+                        <div class="card-contract__savings">
+                            <p class="savings__text">Changez de fournisseur pour économiser 100€ /an</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
