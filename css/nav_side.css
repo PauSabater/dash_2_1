@@ -59,6 +59,7 @@
     background-repeat: no-repeat;
     padding-left: var(--pad-lg);
     padding-top: var(--pad-xsm);
+    margin-left: var(--pad-md);
 }
 
 .nav-side .nav-side__link:hover {
