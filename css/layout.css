@@ -1,5 +1,5 @@
 body {
-    --header-height: 70px; 
+    --header-height: 60px;
     --nav-side-width: 300px;
 }
 
@@ -29,7 +29,7 @@ body {
 /* MEDIA QUERIES MOBILE */ 
 @media screen and (max-width: 1000px) {
     body {
-       --header-height: 50px;
+       --header-height: 60px;
     }
 
     .main-layout {
@@ -39,8 +39,8 @@ body {
 
     .content-container {
         display: block;
-        width: 75vw;
-        margin: 0 5vw;
+        width: 90vw;
+        margin: 0 var(--mg-md);
         padding: 0;
     }
 }

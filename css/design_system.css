@@ -30,7 +30,7 @@ body {
     --cl-ppn-main-50: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.5); 
 
     --cl-ppn-medium: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.15); 
-    --cl-ppn-light: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.02); 
+    --cl-ppn-light: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), 98.5%, 1); 
     --cl-ppn-light-hovered: hsla(var(--cl-ppn-main-h), var(--cl-ppn-main-s), var(--cl-ppn-main-l), 0.03); 
 
     --cl-black-h: 0;
@@ -64,6 +64,11 @@ body {
 
     /* HEIGHT */
     min-height: 100vh; 
+
+    /* TRANSITION */
+    --tr-fast: 0.2s;
+    --tr-base: 0.3s;
+    --tr-slow: 0.5s;
 
     margin: 0;
 }
