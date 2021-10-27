@@ -11,132 +11,27 @@
     <link rel="stylesheet" href="css/nav_side.css">
     <link rel="stylesheet" href="css/switch_page.css">
     <link rel="stylesheet" href="css/moving_page.css">
-    <link rel="stylesheet" href="css/notifications.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>$(document).ready(function () {
-        $(".notification_icon .header__alerts-icon").click(function () {
-            $(".dropdown").toggleClass("active")
-        })
-    });</script>
 </head>
 <body data-barba="wrapper">
-<nav class="header">
-    <!--  HEADER ELEMENT -->
-    <a href="" class="logo-container">
-        <img src="img/logo.svg" alt="" class="logo__img">
-    </a>
+    <nav class="header">
+        <!--  HEADER ELEMENT -->
+        <a href="" class="logo-container">
+            <img src="img/logo.svg" alt="" class="logo__img">
+        </a>
 
-    <!--  CONTAINER WITH ALERTS AND USER -->
-    <div class="header__user-alerts">
-        <div class="header__alerts">
-            <div class="notification_icon">
-                <img class="header__alerts-icon" src="img/icon-bell.svg" alt="">
-                <img class="header__icon-logo" src="img/icon-user.svg" alt="">
+        <!--  CONTAINER WITH ALERTS AND USER -->
+        <div class="header__user-alerts">
+            <div class="header__alerts">
+                <img class="header__alerts-icon" src="img/icon-bell.svg" alt="" class="">
+            </div>
+            <div class="header__user-container">
+                <img class="header__icon-logo" src="img/icon-user.svg" alt="" class="">
                 <p class="header__user-name">Matéo Boutry</p>
             </div>
-            <div class="notification_wrap_outer">
-                <div class="notification_wrap_inner">
-                    <div class="dropdown">
-                        <div class="notify_item">
-                            <div class="notify_img">
-                                <img src="img/frame_5.svg" alt="not_pic" style="width: 50px;">
-                            </div>
-                            <div class="notify_info_unread">
-                                <p>
-                                    A faire avant mercredi 7 octobre
-                                </p>
-                                <span class="notify_time_unread">one day ago</span>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <div class="notify_item">
-                                <div class="notify_img">
-                                    <img src="img/frame_6.svg" alt="not_pic" style="width: 50px;">
-                                </div>
-                                <div class="notify_info">
-                                    <p>
-                                        A faire avant mercredi 7 octobre
-                                    </p>
-                                    <span class="notify_time">one day ago</span>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <div class="notify_item">
-                                    <div class="notify_img">
-                                        <img src="img/frame_3.svg" alt="not_pic" style="width: 50px;">
-                                    </div>
-                                    <div class="notify_info">
-                                        <p>
-                                            A faire avant mercredi 7 octobre
-                                        </p>
-                                        <span class="notify_time">one week ago</span>
-                                    </div>
-                                </div>
-                                <div class="dropdown">
-                                    <div class="notify_item">
-                                        <div class="notify_img">
-                                            <img src="img/frame_4.svg" alt="not_pic" style="width: 50px;">
-                                        </div>
-                                        <div class="notify_info">
-                                            <p>
-                                                A faire avant mercredi 7 octobre
-                                            </p>
-                                            <span class="notify_time">one week ago</span>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <div class="notify_item">
-                                            <div class="notify_img">
-                                                <img src="img/frame_5.svg" alt="not_pic" style="width: 50px;">
-                                            </div>
-                                            <div class="notify_info">
-                                                <p>
-                                                    A faire avant mercredi 7 octobre
-                                                </p>
-                                                <span class="notify_time">one week ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown">
-                                            <div class="notify_item">
-                                                <div class="notify_img">
-                                                    <img src="img/frame_6.svg" alt="not_pic" style="width: 50px;">
-                                                </div>
-                                                <div class="notify_info_unread">
-                                                    <p>
-                                                        A faire avant mercredi 7 octobre
-                                                    </p>
-                                                    <span class="notify_time_unread">one week ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="dropdown">
-                                                <div class="notify_item">
-                                                    <div class="notify_img">
-                                                        <img src="img/frame_7.svg" alt="not_pic" style="width: 50px;">
-                                                    </div>
-                                                    <div class="notify_info">
-                                                        <p>
-                                                            A faire avant mercredi 7 octobre
-                                                        </p>
-                                                        <span class="notify_time">one week ago</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="loader"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
 
-</nav>
+        <div class="loader"></div>
+    </nav>
 
 <div class="main-layout">
 
@@ -178,12 +73,6 @@
     </main>
 
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
-        integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="module" src="js/script.mjs"></script>
 
 </body>
 </html>
