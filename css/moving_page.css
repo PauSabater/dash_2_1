@@ -210,7 +210,7 @@ aside ul li {
 
 /* MOVER SCREEN - Content */
 .mover-content {
-    
+    margin: 20px 0 50px 0;
 }
 
 .mover-content h2 {
@@ -228,6 +228,57 @@ aside ul li {
     align-items: center;
     margin: 0 0 20px 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.mover-card.active {
+    margin-bottom: 0;
+}
+
+.mover-content .panel {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dcdee6;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    padding: 20px 0;
+}
+
+.mover-content .panel li {
+    border: 1px solid #D3D6DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 90px;
+    margin: 15px 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 18px 5px 18px 5px;
+}
+
+.mover-content .panel li:hover {
+    border: 1px solid #5A52FF;
+}
+
+.mover-content .panel li img {
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+}
+
+.mover-content .panel li p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.mover-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mover-card:hover {
@@ -253,14 +304,6 @@ aside ul li {
 .mover-card.checked p {
     text-decoration: line-through;
 }
-
-/* .mover-card__actions ul {
-    display: none;
-}
-
-.mover-card__actions:hover ul {
-    display: block;
-} */
 
 .mover-card__actions {
     position: relative;
@@ -299,7 +342,6 @@ aside ul li {
 
 .box-actions li a {
     color: #212431;
-    /* padding: 5px 10px; */
     display: flex;
     align-items: center;
 }
