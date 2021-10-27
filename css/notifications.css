@@ -1,43 +1,16 @@
-.notification_wrap_inner{
-    position: fixed;
-}
-
-.dropdown .notification_wrap_inner {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 5px;
-    margin: 15px;
-    position: relative;
-    padding: 15px;
-}
-.dropdown.active{
-    display: block;
-}
-/*.notify_img {*/
-/*    height: 36px;*/
-/*    width: 40px;*/
-/*    position: center;*/
-/*}*/
-.notification_wrap_inner, .dropdown, .notify_item p span{
-    color: #605dff;
-}
-
-.notification_wrap_inner, .dropdown, .notify_item .notify_inf .notify_time{
-    font-size: 9px;
-}
 .notification_wrap_outer{
     position: relative;
     height: 30px;
     width: 20px;
-    top:-40px;
+    top:-30px;
 }
 
-.notification_wrap_inner{
+.notification_dropdown{
     position: absolute;
     z-index: 999;
     top: 30px;
-    left: -250px;
-    width: 340px;
+    left: -150px;
+    width: 300px;
     padding: var(--pad-sm);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     background: white;
@@ -45,30 +18,54 @@
     visibility: hidden;
 }
 
-.notification_wrap_outer:hover .notification_wrap_inner{
+.notification_wrap_outer:hover .notification_dropdown{
     visibility: visible;
 }
 
-.dropdown{
-    width: 339px;
+.notification_dropdown_title{
+    color: var(--cl-txt-black);
 }
-.notification_wrap_inner:before{
-    content: "Notifications";
-    color: #817BFE;
-    font-size: 24px;
-    font-weight: bold;
+
+.notif_item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--cl-txt-dark-grey);
+    transition: color 0.3s;
 }
-.notify_info_unread{
-    color: #817BFE;
-    font-weight: bold;
-    font-size: 16px;
+
+.notif_item:hover {
+    color: var(--cl-black);
 }
-.notify_time{
-    color: #000000;
-    font-size: 9px;
+
+.notif-link {
+    color:inherit;
+    cursor: pointer;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    padding-left: var(--pad-lg);
+    padding-top: var(--pad-xsm);
+    padding-bottom: var(--pad-xsm);
 }
-.notify_time_unread{
-    color: #817BFE;
-    font-weight: bold;
-    font-size: 9px;
+
+.notif-time{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.background-icon-wifi{
+    background-image: url("../img/icon-wifi.svg");
+}
+
+.background-icon-savings{
+    background-image: url("../img/icon-savings.svg");
+}
+
+.background-icon-lightbulb{
+    background-image: url("../img/icon-lightbulb.svg");
 }

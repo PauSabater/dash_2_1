@@ -4,45 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>App Dashboard</title>
+    <title>Dashboard switch</title>
     <link rel="stylesheet" href="css/design_system.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav_side.css">
     <link rel="stylesheet" href="css/switch_page.css">
     <link rel="stylesheet" href="css/moving_page.css">
-    <link rel="stylesheet" href="css/empty_contracts.css">
-    <link rel="stylesheet" href="css/notifications.css">
   </head>
   <body data-barba="wrapper">
-
     <nav class="header">
-
         <!--  HEADER ELEMENT -->
         <a href="" class="logo-container">
-            <img src="img/logo.svg" alt="" class="logo__img logo__desktop">
-            <img src="img/logo_mobile.svg" alt="" class="logo__img logo__mobile">
+            <img src="img/logo.svg" alt="" class="logo__img">
         </a>
 
         <!--  CONTAINER WITH ALERTS AND USER -->
         <div class="header__user-alerts">
             <div class="header__alerts">
                 <img class="header__alerts-icon" src="img/icon-bell.svg" alt="" class="">
-                <div class="notification_wrap_outer">
-                    <div class="notification_dropdown">
-                        <div class="notification_dropdown_title fs-md">Notifications</div>
-                        <ul>
-                            <li class="notif_item">
-                                <a href="#" class="notif-link background-icon-wifi fs-sm">Augmentation du la mensualité</a>
-                                <div class="notif-time fs-xsm">Il y a un jour</div>
-                            </li>
-                            <li class="notif_item">
-                                <a href="#" class="notif-link background-icon-savings fs-sm">Fin de l’engagement</a>
-                                <div class="notif-time fs-xsm">Il y a un jour</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="header__user-container">
                 <img class="header__icon-logo" src="img/icon-user.svg" alt="" class="">
@@ -50,38 +30,31 @@
             </div>
         </div>
 
-        <!--  BURGER ELEMENT -->
-        <input type="checkbox" autocomplete="off" id="js-burger-input" class="nav__burger-input js-checkbox-input js-input" name="burger">
-        <label for="js-burger-input" class="nav__burger">
-            <div class="burger-line"></div>
-        </label>
-
+        <div class="loader"></div>
     </nav>
-
-    <div class="loader"></div>
 
     <div class="main-layout">
 
         <nav class="nav-side">
-            <!--  SIDE ELEMENT -->
+            <!--  TODO: SIDE ELEMENT -->
             <ul class="nav-side__list">
                 <li class="nav-side__item fs-semibold">
-                    <a href="/welcome.html" class="nav-side__link background-icon-home">Accueil</a>
+                    <a href="/welcome.html" class="nav-side__link">Accueil</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/empty_contracts.html" class="nav-side__link background-icon-docs">Gestion de contrats</a>
+                    <a href="/contracts.html" class="nav-side__link">Gestion de contrats</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/empty_moving.html" class="nav-side__link background-icon-truck">Déménagement</a>
+                    <a href="/moving.html" class="nav-side__link">Déménagement</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/account.html" class="nav-side__link background-icon-person">Compte</a>
+                    <a href="/account.html" class="nav-side__link">Compte</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/help.html" class="nav-side__link background-icon-qna">Aide</a>
+                    <a href="/help.html" class="nav-side__link">Aide</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/faqs.html" class="nav-side__link background-icon-faq">FAQs</a>
+                    <a href="/faqs.html" class="nav-side__link">FAQs</a>
                 </li>
             </ul>
         </nav>
@@ -92,11 +65,24 @@
 
             <div class="content-container">
 
-                <!-- CONTENT HERE -->
-                <p style="margin-top: 100px">HELLO</p>
 
+                <!-- MOVER PART -->
+                <section class="mover">
 
-            </div>
+                    <!-- Title & Description -->
+                    <div class="mover-header">
+                        <div>
+                            <h1 class="mover-header__title">Indiquez l'adresse</h1>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    
+                </section>
+
+            </div> <!--  END OF PAGE CONTENT -->
         </main>
 
     </div>

@@ -43,12 +43,6 @@
 
 }
 
-.header .header__user-name:after {
-    content: ">";
-    position: absolute;
-    margin-left: 5px;
-}
-
 .header .header__alerts {
     cursor: pointer;
     margin-right: var(--mg-md);
