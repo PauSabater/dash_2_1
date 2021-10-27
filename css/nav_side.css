@@ -16,7 +16,7 @@
 
 .nav-side .nav-side__item {
     position: relative;
-    display: flex;
+    display: grid;
     flex-direction: row;
     align-items: center;
     height: 60px; 
@@ -49,6 +49,8 @@
 }
 
 .nav-side .nav-side__link {
+    grid-column-start: 1;
+    grid-row-start: 1;
     z-index: 10;
     cursor: pointer;
     text-decoration: none;
@@ -70,6 +72,10 @@
     height: 22px;
     width: 22px;
     transform: translateY(-50%);
+}
+
+.link__final-move {
+    display:none;
 }
 
 

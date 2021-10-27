@@ -25,6 +25,10 @@ body {
     opacity: 0;
 }
 
+.text--mobile {
+    display: none; 
+}
+
 
 /* MEDIA QUERIES MOBILE */ 
 @media screen and (max-width: 1000px) {
@@ -42,5 +46,9 @@ body {
         width: 90vw;
         margin: 0 var(--mg-md);
         padding: 0;
+    }
+
+    .text--desktop {
+        display: none; 
     }
 }
