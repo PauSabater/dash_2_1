@@ -20,6 +20,7 @@ body {
     --fs-md: 24px; 
     --fs-base: 18px; 
     --fs-sm: 14px; 
+    --fs-xsm: 10px;
 
     /* COLORS */ 
     --cl-ppn-main-h: 243;
@@ -46,7 +47,8 @@ body {
     /* PADDING */
     --pad-lg: 50px; 
     --pad-md: 20px; 
-    --pad-sm: 20px; 
+    --pad-sm: 20px;
+    --pad-xsm: 10px;
 
     /* MARGINS */
     --mg-lg: 50px;
@@ -95,6 +97,10 @@ body {
 
 .fs-sm {
     font-size: var(--fs-sm); 
+}
+
+.fs-xsm {
+    font-size: var(--fs-xsm);
 }
 
 .fs-semibold {
