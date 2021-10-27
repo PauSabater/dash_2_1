@@ -11,7 +11,6 @@
     top: 30px;
     left: -250px;
     width: 340px;
-    height: 300px;
     padding: var(--pad-sm);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     background: white;
@@ -24,8 +23,38 @@
 }
 
 .notification_dropdown_title{
-    color: #817BFE;
-    font-size: 24px;
-    font-weight: bold;
-    visibility: inherit;
+    color: black;
+}
+
+.notif_item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.notif-link {
+    z-index: 10;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    padding-left: var(--pad-lg);
+    padding-top: var(--pad-xsm);
+    padding-bottom: var(--pad-xsm);
+}
+
+.background-icon-wifi{
+    background-image: url("../img/icon-wifi.svg");
+}
+
+.background-icon-savings{
+    background-image: url("../img/icon-savings.svg");
+}
+
+.background-icon-lightbulb{
+    background-image: url("../img/icon-lightbulb.svg");
 }
