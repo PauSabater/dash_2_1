@@ -17,6 +17,14 @@ window.addEventListener('load', () => {
             });
           },
           enter(data) {
+            const url = data.next.url.href;
+            const url_array = url.split("/");
+            const pathname = url_array[url_array.length - 1]; 
+
+            if (pathname === "moving.html") { 
+                executeMoveFunctions();
+            }
+
             return gsap.from(data.next.container, {
               opacity: 0,
               duration: 0.2
@@ -32,13 +40,17 @@ window.addEventListener('load', () => {
      */
     function activateInitialMenuLink() {
         const pathname = location.pathname;
-        //document.querySelector(`[href="${pathname}"]`).parentElement.classList.add("item--focus");
+        document.querySelector(`[href="${pathname}"]`).parentElement.classList.add("item--focus");
 
         if (pathname === "/empty_contracts.html") {
             addContractBtnEvent("#addContract", "/empty_contracts.html", "/contracts.html"); 
 
         } else if (pathname === "/empty_moving.html") {
             addContractBtnEvent("#addMoving", "/empty_moving.html", "/moving.html"); 
+        }
+
+        if (pathname === "/moving.html") {
+            executeMoveFunctions();
         }
     }
 
@@ -50,10 +62,11 @@ window.addEventListener('load', () => {
     function activateMenuLink(url) {
         const pathname_array = url.split("/");
         const pathname = pathname_array[pathname_array.length - 1]; 
-        console.log("activate menu : "+pathname);
-        document.querySelector(".item--focus").classList.remove("item--focus");
-        document.querySelector(`a[href="/${pathname}"]`).parentElement.classList.add("item--focus");
-        console.log("parent is "+document.querySelector(`a[href="/${pathname}"]`).parentElement.classList);
+        
+        if (pathname !== "moving-step-01.html" && pathname !== "moving-step-02.html" && pathname !== "moving-step-03.html" && pathname !== "moving-step-04.html" && pathname !== "moving") {
+            document.querySelector(".item--focus").classList.remove("item--focus");
+            document.querySelector(`a[href="/${pathname}"]`).parentElement.classList.add("item--focus");
+        }
 
         if (el_burger.checked === true) {
             el_burger.checked = false; 
@@ -71,11 +84,9 @@ window.addEventListener('load', () => {
      */
     function addContractBtnEvent (id_btn, url_query, new_url) {
         document.querySelector(id_btn).addEventListener("click", () => {
-            console.log("change url, idbtn "+id_btn+" url_query "+url_query+" new url "+new_url);
             const el_link = document.querySelector(`[href="${url_query}"]`); 
             el_link.href = new_url;
             el_link.parentElement.classList.add("item--focus");
-            console.log("parent is "+el_link.parentElement.classList);
         }) 
     }
 
@@ -96,21 +107,12 @@ window.addEventListener('load', () => {
         }) 
     }
 
-
-    function activateMenuLink(url) {
-        const pathname_array = url.split("/");
-        const pathname = pathname_array[pathname_array.length - 1];
-        document.querySelector(".item--focus").classList.remove("item--focus");
-        document.querySelector(`[href="/${pathname}"]`).parentElement.classList.add("item--focus");
-    }
-
     //_______________________________________________________________________________________________________________________________________________________________//
 
 
-
+function executeMoveFunctions(){
 
     // Open more actions module
-
     let elmtActions = document.getElementsByClassName("more-actions");
 
     for (let i = 0; i < elmtActions.length; i++) {
@@ -231,6 +233,8 @@ window.addEventListener('load', () => {
       btnCloseMoving.style.background = '#000000';
       btnCloseMoving.style.textDecoration = "line-through";
       btnCloseMoving.style.opacity = "0.3";
-    }
+    })}
 
-    )});
+    }
+    
+    );
