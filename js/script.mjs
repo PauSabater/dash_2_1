@@ -185,8 +185,23 @@ function executeMoveFunctions(){
 
     // Checked task
     let elmtChecked = document.querySelector('.doityourself');
+    let closeMovingDone = false; 
 
     elmtChecked.addEventListener('click', function(e) {
+      /* Moving - Button Cloturer demenagment */
+
+      if(closeMovingDone === false) {
+
+        let btnCloseMoving = document.querySelector('.mover-step__btn');
+
+        btnCloseMoving.addEventListener('click', function(e) {
+          btnCloseMoving.style.background = '#000000';
+          btnCloseMoving.style.textDecoration = "line-through";
+          btnCloseMoving.style.opacity = "0.3";
+          closeMovingDone = true;
+        })
+      }
+
       let elmtDIV = document.querySelector("#card");
       elmtDIV.classList.toggle("checked");
       if (elmtDIV.classList.contains("checked")){
@@ -224,17 +239,7 @@ function executeMoveFunctions(){
         })
       });
     }
-
-    /* Moving - Button Cloturer demenagment */
-
-    let btnCloseMoving = document.querySelector('.mover-step__btn');
-
-    btnCloseMoving.addEventListener('click', function(e) {
-      btnCloseMoving.style.background = '#000000';
-      btnCloseMoving.style.textDecoration = "line-through";
-      btnCloseMoving.style.opacity = "0.3";
-    })}
-
-    }
-    
-    );
+  
+  }
+}  
+);
