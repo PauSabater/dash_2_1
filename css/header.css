@@ -3,10 +3,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 100;
     top: 0;
     left: 0; 
-    width: 100%; 
+    width: 100vw; 
     height: var(--header-height);
     box-shadow: 0 0 7px 0 rgb(0 0 0 / 10%);
     background: white; 
@@ -67,8 +67,93 @@
     height: 20px;
 }
 
+.header .nav__burger,
+.header .nav__burger-item {
+    display: none;
+}
+
+.header .logo__mobile {
+    display: none; 
+}
+
+.header .nav__burger-input {
+    display: none;
+}
 
 /* MEDIA QUERIES MOBILE */ 
 @media screen and (max-width: 1000px) {
+
+    .header {
+        margin-right: 20px;
+    }
+    .header .logo-container {
+        height: 23px;
+        width: 120px;
+        margin-left: var(--mg-md);
+    }
+
+    .header .logo__mobile {
+        display: block; 
+    }
+
+    .header .logo__desktop {
+        display: none; 
+    }
+
+    .header .header__user-alerts {
+        display: none;
+    }
+
+    /* BURGER */
+
+    .header .nav__burger {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        height: 22px;
+        width: 30px;
+        top: calc(((var(--header-height) - var(--burger-height))/2) - 1.5px);
+        right: 20px;
+        z-index: var(--zi-40);
+   }
+    .nav__burger::before, .nav__burger::after, .nav__burger .burger-line {
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 3px;
+        width: 100%;
+        border-radius: 1.5px;
+        background: var(--cl-ppn-main);
+        transition: transform var(--tr-fast) ease, top var(--tr-fast) ease var(--tr-fast), opacity var(--tr-fast) ease var(--tr-fast);
+   }
+    .nav__burger::before {
+        top: 0;
+   }
+    .nav__burger::after {
+        top: 100%;
+   }
+    .nav__burger-input[type=checkbox]:checked ~ .nav__menu-container {
+        transform: translateY(100vh);
+        transition: transform var(--tr-fast) ease;
+   }
+    .nav__burger-input[type=checkbox]:checked ~ .nav__menu-container .nav__list {
+        opacity: 1;
+        transition: opacity var(--tr-fast) ease-in 0.15s;
+   }
+    .nav__burger-input[type=checkbox]:checked ~ .nav__menu-container .buttons-container .cta--float {
+        animation: disappearAppear calc(var(--tr-fast) * 2) ease forwards;
+   }
+    .nav__burger-input[type=checkbox]:checked + .nav__burger::after, .nav__burger-input[type=checkbox]:checked + .nav__burger::before {
+        top: 50%;
+        transform: rotate(-45deg);
+        transition: transform var(--tr-fast) ease var(--tr-fast), top var(--tr-fast) ease;
+   }
+    .nav__burger-input[type=checkbox]:checked + .nav__burger::before {
+        transform: rotate(45deg);
+   }
+    .nav__burger-input[type=checkbox]:checked + .nav__burger .burger-line {
+        opacity: 0;
+        transition: opacity var(--tr-fast) ease;
+   }
 
 }
