@@ -12,6 +12,7 @@
     margin-top: 150px; 
     padding-inline-start: 0px;
     padding-right: var(--pad-lg);
+    padding-left: var(--pad-lg);
 }
 
 .nav-side .nav-side__item {
@@ -57,6 +58,7 @@
     transition: color 0.3s;
     background-repeat: no-repeat;
     padding-left: var(--pad-lg);
+    padding-top: var(--pad-xsm);
 }
 
 .nav-side .nav-side__link:hover {
