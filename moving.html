@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard switch</title>
+    <title>App Dashboard</title>
     <link rel="stylesheet" href="css/design_system.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav_side.css">
     <link rel="stylesheet" href="css/switch_page.css">
     <link rel="stylesheet" href="css/moving_page.css">
+    <link rel="stylesheet" href="css/empty_contracts.css">
     <link rel="stylesheet" href="css/notifications.css">
   </head>
   <body data-barba="wrapper">
+
     <nav class="header">
+
         <!--  HEADER ELEMENT -->
         <a href="" class="logo-container">
-            <img src="img/logo.svg" alt="" class="logo__img">
+            <img src="img/logo.svg" alt="" class="logo__img logo__desktop">
+            <img src="img/logo_mobile.svg" alt="" class="logo__img logo__mobile">
         </a>
 
         <!--  CONTAINER WITH ALERTS AND USER -->
@@ -46,8 +50,15 @@
             </div>
         </div>
 
-        <div class="loader"></div>
+        <!--  BURGER ELEMENT -->
+        <input type="checkbox" autocomplete="off" id="js-burger-input" class="nav__burger-input js-checkbox-input js-input" name="burger">
+        <label for="js-burger-input" class="nav__burger">
+            <div class="burger-line"></div>
+        </label>
+
     </nav>
+
+    <div class="loader"></div>
 
     <div class="main-layout">
 
@@ -55,22 +66,28 @@
             <!--  SIDE ELEMENT -->
             <ul class="nav-side__list">
                 <li class="nav-side__item fs-semibold">
-                    <a href="/welcome.html" class="nav-side__link background-icon-home">Accueil</a>
+                    <img src="img/icon-home.svg" alt="" class="item__icon">
+                    <a href="/welcome.html" class="nav-side__link">Accueil</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/empty_contracts.html" class="nav-side__link background-icon-docs">Gestion de contrats</a>
+                    <img src="img/icon-docs.svg" alt="" class="item__icon">
+                    <a href="/empty_contracts.html" class="nav-side__link">Gestion de contrats</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/empty_moving.html" class="nav-side__link background-icon-truck">Déménagement</a>
+                    <img src="img/icon-truck.svg" alt="" class="item__icon">
+                    <a href="/empty_moving.html" class="nav-side__link">Déménagement</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/account.html" class="nav-side__link background-icon-person">Compte</a>
+                    <img src="img/icon-person.svg" alt="" class="item__icon">
+                    <a href="/account.html" class="nav-side__link">Compte</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/help.html" class="nav-side__link background-icon-qna">Aide</a>
+                    <img src="img/icon-qna.svg" alt="" class="item__icon">
+                    <a href="/help.html" class="nav-side__link">Aide</a>
                 </li>
                 <li class="nav-side__item fs-semibold">
-                    <a href="/faqs.html" class="nav-side__link background-icon-faq">FAQs</a>
+                    <img src="img/icon-faq.svg" alt="" class="item__icon">
+                    <a href="/faqs.html" class="nav-side__link">FAQs</a>
                 </li>
             </ul>
         </nav>

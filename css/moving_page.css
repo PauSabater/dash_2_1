@@ -375,3 +375,16 @@ aside ul li {
     padding: 0;
     border-right: none;
 }
+
+
+
+/* MEDIA QUERIES MOBILE */ 
+@media screen and (max-width: 1000px) {
+    .card-contract {
+        grid-template-columns: 50px 50px auto auto auto;
+        padding: 0 var(--pad-md)
+    }
+
+
+
+}
